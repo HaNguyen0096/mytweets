@@ -11,7 +11,7 @@
     <div class="col-md-4 mx-auto col-19">
         <form class="form" method='POST' action="/create-tweet">
             {% csrf_token %}
-            <input type="hidden" value="/" name="text" />
+            <input type="hidden" value="/" name="next" />
             <textarea class="form-control" name="content" placeholder="Your tweet"></textarea>
             <button type="submit" class="btn btn-primary">Tweet</button>
         </form>
@@ -24,12 +24,6 @@
 
 <script>
     const tweetsElement = document.getElementById("tweets")
-    // tweetsElement.innerHTML = 'Loading...'
-
-    // var el1 ="<h1>hello 1</h1>"
-    // var el2 ="<h1>hello 2</h1>"
-    // var el3 ="<h1>hello 3</h1>"
-    // tweetsElement.innerHTML = el1 + el2 + el3
 
     const xhr = new XMLHttpRequest()
     const method = 'GET'
