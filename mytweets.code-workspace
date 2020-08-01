@@ -4,5 +4,7 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"python.pythonPath": "C:/Users/hangu/.virtualenvs/mytweets-EWsnVEI2/Scripts/python"
+	}
 }
