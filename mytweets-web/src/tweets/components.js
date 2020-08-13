@@ -27,11 +27,11 @@ export function TweetsComponent(props) {
                 </button>
             </form>
         </div>
-        <TweetList newTweets={newTweets}/>
+        <TweetsList newTweets={newTweets}/>
     </div>
 }
 
-export function TweetList(props) {
+export function TweetsList(props) {
     const [tweetsInit, setTweetsInit] = useState([])
     const [tweets, setTweets] = useState([])
     useEffect(() => {

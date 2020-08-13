@@ -7,12 +7,12 @@ import * as serviceWorker from './serviceWorker';
 
 const appEl = document.getElementById('root')
 if (appEl) {
-  ReactDOM.render(<App />, appEl)
+  ReactDOM.render(<App />, appEl);
 }
 
 const tweetsEl = document.getElementById('mytweet')
 if (tweetsEl) {
-  ReactDOM.render(<TweetsComponent />, tweetsEl)
+  ReactDOM.render(<TweetsComponent />, tweetsEl);
 }
 
 
