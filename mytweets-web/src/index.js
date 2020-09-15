@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import {ProfileBadgeComponent} from './profiles'
 import {FeedComponent, TweetsComponent, TweetDetailComponent} from './tweets'
 import * as serviceWorker from './serviceWorker';
 
@@ -28,6 +29,14 @@ tweetDetailElements.forEach(container => {
   ReactDOM.render(
     e(TweetDetailComponent, container.dataset),
     container);
+})
+
+const userProfileBadgeElements = document.querySelectorAll(".mytweet-profile-badge")
+
+userProfileBadgeElements.forEach(container=> {
+    ReactDOM.render(
+        e(ProfileBadgeComponent, container.dataset), 
+        container);
 })
 
 // If you want your app to work offline and load faster, you can change
